@@ -118,9 +118,9 @@
 
 <addon id="repository.kraakie" name="Awesome repo" version="0.0.1" provider-name="Awesome">
 	<extension point="xbmc.addon.repository" name="Awesome repo">
-		<info compressed="false">http://raw.github.com/kraakie/AwesomeStreams/master/addons.xml</info>
-		<checksum>http://raw.github.com/kraakie/AwesomeStreams/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://raw.github.com/kraakie/AwesomeStreams/master</datadir>
+		<info compressed="false">http://raw.github.com/AwesomeStreams/AwesomeStreams/master/addons.xml</info>
+		<checksum>http://raw.github.com/AwesomeStreams/AwesomeStreams/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/AwesomeStreams/AwesomeStreams/master</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>The Official Awesome repository</summary>
