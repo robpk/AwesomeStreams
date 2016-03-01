@@ -1,0 +1,479 @@
+<item>
+<title>SKY SPORTS 1</title>
+<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
+<regex>
+<name>URLEncodedLink</name>
+<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"(.*?)"</expres>
+<page>http://p2pcast.tech/getTok.php</page>
+<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
+<X-Req>XMLHttpRequest</X-Req>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar>$doregex[get-encodeUrl]</cookieJar>
+</regex>
+<regex>
+<name>decodedUrl</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-encodeUrl</name>
+<expres>murl = "(.*?)"</expres>
+<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
+<referer>http://wiziwig.xyz/frameskysport1.html</referer>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>id</name>
+<expres>id='(.*?)'</expres>
+<page>http://wiziwig.xyz/frameskysport1.html</page>
+<referer>http://wiziwig.xyz/</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
+
+<item>
+<title>SKY SPORTS 2</title>
+<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
+<regex>
+<name>URLEncodedLink</name>
+<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"(.*?)"</expres>
+<page>http://p2pcast.tech/getTok.php</page>
+<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
+<X-Req>XMLHttpRequest</X-Req>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar>$doregex[get-encodeUrl]</cookieJar>
+</regex>
+<regex>
+<name>decodedUrl</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-encodeUrl</name>
+<expres>murl = "(.*?)"</expres>
+<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
+<referer>http://wiziwig.xyz/framesky2.html</referer>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>id</name>
+<expres>id='(.*?)'</expres>
+<page>http://wiziwig.xyz/framesky2.html</page>
+<referer>http://wiziwig.xyz/</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
+
+<item>
+<title>SKY SPORTS 3</title>
+<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
+<regex>
+<name>URLEncodedLink</name>
+<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"(.*?)"</expres>
+<page>http://p2pcast.tech/getTok.php</page>
+<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
+<X-Req>XMLHttpRequest</X-Req>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar>$doregex[get-encodeUrl]</cookieJar>
+</regex>
+<regex>
+<name>decodedUrl</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-encodeUrl</name>
+<expres>murl = "(.*?)"</expres>
+<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
+<referer>http://wiziwig.xyz/frameskysport3.html</referer>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>id</name>
+<expres>id='(.*?)'</expres>
+<page>http://wiziwig.xyz/frameskysport3.html</page>
+<referer>http://wiziwig.xyz/</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
+
+<item>
+<title>SKY SPORTS 4</title>
+<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
+<regex>
+<name>URLEncodedLink</name>
+<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"(.*?)"</expres>
+<page>http://p2pcast.tech/getTok.php</page>
+<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
+<X-Req>XMLHttpRequest</X-Req>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar>$doregex[get-encodeUrl]</cookieJar>
+</regex>
+<regex>
+<name>decodedUrl</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-encodeUrl</name>
+<expres>murl = "(.*?)"</expres>
+<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
+<referer>http://wiziwig.xyz/frameskysport4.html</referer>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>id</name>
+<expres>id='(.*?)'</expres>
+<page>http://wiziwig.xyz/frameskysport4.html</page>
+<referer>http://wiziwig.xyz/</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
+
+<item>
+<title>SKY SPORTS 5</title>
+<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
+<regex>
+<name>URLEncodedLink</name>
+<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"(.*?)"</expres>
+<page>http://p2pcast.tech/getTok.php</page>
+<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
+<X-Req>XMLHttpRequest</X-Req>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar>$doregex[get-encodeUrl]</cookieJar>
+</regex>
+<regex>
+<name>decodedUrl</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-encodeUrl</name>
+<expres>murl = "(.*?)"</expres>
+<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
+<referer>http://wiziwig.xyz/frameskysport5.html</referer>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>id</name>
+<expres>id='(.*?)'</expres>
+<page>http://wiziwig.xyz/frameskysport5.html</page>
+<referer>http://wiziwig.xyz/</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
+
+<item>
+<title>BT Sport 1</title>
+<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
+<regex>
+<name>URLEncodedLink</name>
+<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"(.*?)"</expres>
+<page>http://p2pcast.tech/getTok.php</page>
+<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
+<X-Req>XMLHttpRequest</X-Req>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar>$doregex[get-encodeUrl]</cookieJar>
+</regex>
+<regex>
+<name>decodedUrl</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-encodeUrl</name>
+<expres>murl = "(.*?)"</expres>
+<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
+<referer>http://wiziwig.xyz/framebt1.html</referer>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>id</name>
+<expres>id='(.*?)'</expres>
+<page>http://wiziwig.xyz/framebt1.html</page>
+<referer>http://wiziwig.xyz/</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
+
+<item>
+<title>BT Sport 2</title>
+<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
+<regex>
+<name>URLEncodedLink</name>
+<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"(.*?)"</expres>
+<page>http://p2pcast.tech/getTok.php</page>
+<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
+<X-Req>XMLHttpRequest</X-Req>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar>$doregex[get-encodeUrl]</cookieJar>
+</regex>
+<regex>
+<name>decodedUrl</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-encodeUrl</name>
+<expres>murl = "(.*?)"</expres>
+<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
+<referer>http://wiziwig.xyz/framebt2.html</referer>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>id</name>
+<expres>id='(.*?)'</expres>
+<page>http://wiziwig.xyz/framebt2.html</page>
+<referer>http://wiziwig.xyz/</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
+
+<item>
+<title>BT Europe</title>
+<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
+<regex>
+<name>URLEncodedLink</name>
+<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"(.*?)"</expres>
+<page>http://p2pcast.tech/getTok.php</page>
+<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
+<X-Req>XMLHttpRequest</X-Req>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar>$doregex[get-encodeUrl]</cookieJar>
+</regex>
+<regex>
+<name>decodedUrl</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-encodeUrl</name>
+<expres>murl = "(.*?)"</expres>
+<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
+<referer>http://wiziwig.xyz/framebte.html</referer>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>id</name>
+<expres>id='(.*?)'</expres>
+<page>http://wiziwig.xyz/framebte.html</page>
+<referer>http://wiziwig.xyz/</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
+
+<item>
+<title>ESPN UK</title>
+<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
+<regex>
+<name>URLEncodedLink</name>
+<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"(.*?)"</expres>
+<page>http://p2pcast.tech/getTok.php</page>
+<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
+<X-Req>XMLHttpRequest</X-Req>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar>$doregex[get-encodeUrl]</cookieJar>
+</regex>
+<regex>
+<name>decodedUrl</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-encodeUrl</name>
+<expres>murl = "(.*?)"</expres>
+<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
+<referer>http://wiziwig.xyz/frameespnuk.html</referer>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>id</name>
+<expres>id='(.*?)'</expres>
+<page>http://wiziwig.xyz/frameespnuk.html</page>
+<referer>http://wiziwig.xyz/</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
+
+<item>
+<title>Eurosport 1</title>
+<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
+<regex>
+<name>URLEncodedLink</name>
+<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"(.*?)"</expres>
+<page>http://p2pcast.tech/getTok.php</page>
+<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
+<X-Req>XMLHttpRequest</X-Req>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar>$doregex[get-encodeUrl]</cookieJar>
+</regex>
+<regex>
+<name>decodedUrl</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-encodeUrl</name>
+<expres>murl = "(.*?)"</expres>
+<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
+<referer>http://wiziwig.xyz/frameeuro1uk.html</referer>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>id</name>
+<expres>id='(.*?)'</expres>
+<page>http://wiziwig.xyz/frameeuro1uk.html</page>
+<referer>http://wiziwig.xyz/</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
+
+<item>
+<title>Eurosport 2</title>
+<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
+<regex>
+<name>URLEncodedLink</name>
+<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"(.*?)"</expres>
+<page>http://p2pcast.tech/getTok.php</page>
+<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
+<X-Req>XMLHttpRequest</X-Req>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar>$doregex[get-encodeUrl]</cookieJar>
+</regex>
+<regex>
+<name>decodedUrl</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-encodeUrl</name>
+<expres>murl = "(.*?)"</expres>
+<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
+<referer>http://wiziwig.xyz/frameeuro2uk.html</referer>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>id</name>
+<expres>id='(.*?)'</expres>
+<page>http://wiziwig.xyz/frameeuro2uk.html</page>
+<referer>http://wiziwig.xyz/</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
+
+<item>
+<title>Box Nation</title>
+<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
+<regex>
+<name>URLEncodedLink</name>
+<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"(.*?)"</expres>
+<page>http://p2pcast.tech/getTok.php</page>
+<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
+<X-Req>XMLHttpRequest</X-Req>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar>$doregex[get-encodeUrl]</cookieJar>
+</regex>
+<regex>
+<name>decodedUrl</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-encodeUrl</name>
+<expres>murl = "(.*?)"</expres>
+<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
+<referer>http://wiziwig.xyz/frameboxnation.html</referer>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>id</name>
+<expres>id='(.*?)'</expres>
+<page>http://wiziwig.xyz/frameboxnation.html</page>
+<referer>http://wiziwig.xyz/</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
