@@ -71,48 +71,21 @@
 
 
 <item>
-<title>[COLOR orange][B]---------- Streams online 10-15 minutes before startime----------[/B][/COLOR]</title>
+<title>[COLOR orange][B]---------- Streams online 5-15 minutes before startime----------[/B][/COLOR]</title>
 <linkas>http://ignoreme</linkas>
 <externallink>http://</externallink>
 <thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
 <fanart></fanart>
 </item>
 <item>
-<title>Football - 16:00 Croatian League NK Slaven Koprivnica vs NK Zagreb</title>
-<sportsdevilas>http://cricfree.tv/watch/live/nk-slaven-koprivnica-vs-nk-zagreb-live-streaming</sportsdevilas>
-<referer>http://cricfree.tv/</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
 
-<item>
-<title>Football - 16:30 2.Bundesliga Sandhausen vs Nurnberg</title>
-<sportsdevilas>http://cricfree.tv/watch/live/sandhausen-vs-nurnberg-live-streaming</sportsdevilas>
-<referer>http://cricfree.tv/</referer>
+item>
+<title>Test</title>
+<sportsdevilas>http://goatd.net/139947/watch-las-palmas-vs-getafe</sportsdevilas>
+<referer>http://goatd.net/</referer>
 <thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
 <fanart></fanart>
 </item>
+ 
 
-<item>
-<title>Football - 16:30 2.Bundesliga Karlsruher vs Paderborn</title>
-<sportsdevilas>http://cricfree.tv/watch/live/karlsruher-vs-paderborn-live-streaming</sportsdevilas>
-<referer>http://cricfree.tv/</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
-
-<item>
-<title>Football - 16:30 2.Bundesliga Fortuna Dusseldorf vs VFL Bochum</title>
-<sportsdevilas>http://cricfree.tv/watch/live/fortuna-dusseldorf-vs-vfl-bochum-live-streaming</sportsdevilas>
-<referer>http://cricfree.tv/</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
-
-<item>
-<title>Football - 16:30	2.Bundesliga FC Kaiserslautern vs TSV 1860 Munchen</title>
-<sportsdevilas>http://cricfree.tv/watch/live/fortuna-dusseldorf-vs-vfl-bochum-live-streaming</sportsdevilas>
-<referer>http://cricfree.tv/</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
+<items>
