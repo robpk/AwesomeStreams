@@ -41,7 +41,7 @@ class NoRedirection(urllib2.HTTPErrorProcessor):
        return response
    https_response = http_response
 
-ASBase = 'aHR0cDovL3Bhc3RlYmluLmNvbS9yYXcvSEtkZUFLVEs='
+ASBase = 'aHR0cHM6Ly9naXRodWIuY29tL0F3ZXNvbWVzdHJlYW1zL0F3ZXNvbWVTdHJlYW1zL3Jhdy9tYXN0ZXIveG1sL0luZGV4LnhtbA=='
 sourceSitebvls = 'http://bvls2016.sc'      
 
 addon = xbmcaddon.Addon('plugin.video.AwesomeStreams')
@@ -175,7 +175,7 @@ def ASIndex():
 
 def News():
 	text = ''
-	twit = 'http://pastebin.com/raw/0CUGq6Fw'
+	twit = 'http://bit.ly/1VPcNkj'
 	req = urllib2.Request(twit)
 	req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
 	response = urllib2.urlopen(req)
@@ -197,7 +197,7 @@ def News():
 
 def Privacy_Policy():
 	text = ''
-	twit = 'http://pastebin.com/raw/VM3SppzP'
+	twit = 'http://bit.ly/1pmXRzk'
 	req = urllib2.Request(twit)
 	req.add_header('User-Agent', 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3')
 	response = urllib2.urlopen(req)
