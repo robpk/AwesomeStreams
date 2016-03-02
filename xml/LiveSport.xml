@@ -66,10 +66,18 @@
 <item>
 <title>Test</title>
 <sportsdevilas>http://goatd.net/44486/watch-fox-sports-1</sportsdevilas>
-<refer>http://goatd.net/</refer>
+<referer>http://goatd.net/</referer>
 <thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
 <fanart></fanart>
 </item>
+<item>
+<title>SKY Sports 1</title>
+<sportsdevilas>http://mamahd.com/watch-sky-sports-1-live-stream-1.html</sportsdevilas>
+<referer>http://mamahd.com/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
+
 
  
 
