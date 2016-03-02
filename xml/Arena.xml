@@ -997,3 +997,43 @@
 </regex>
 <thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
 </item>
+
+<item>
+<title>Test</title>
+<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
+<regex>
+<name>URLEncodedLink</name>
+<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
+<page></page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>token</name>
+<expres>"token":"(.*?)"</expres>
+<page>http://p2pcast.tech/getTok.php</page>
+<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
+<X-Req>XMLHttpRequest</X-Req>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar>$doregex[get-encodeUrl]</cookieJar>
+</regex>
+<regex>
+<name>decodedUrl</name>
+<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
+<page></page>
+</regex>
+<regex>
+<name>get-encodeUrl</name>
+<expres>murl = "(.*?)"</expres>
+<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
+<referer>http://livestream-s.info/video/354008.html</referer>
+<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>id</name>
+<expres>id='(.*?)'</expres>
+<page>http://www.streamsarena.eu/player-lsh/player25.html</page>
+<referer>http://www.streamsarena.eu/</referer>
+</regex>
+<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
