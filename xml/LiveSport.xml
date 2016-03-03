@@ -1,3 +1,4 @@
+<items>
 <item>
 <title>[COLOR orange][B]Special shout out to http://dokitv.nl/[/B][/COLOR]</title>
 <linkas>http://ignoreme</linkas>
@@ -66,6 +67,22 @@
 </item>
 
 
+
+<item>
+<title>Icehockey - 15:00 Yekaterinburg vs Metallurg Magnitogorsk</title>
+<sportsdevilas>http://goatd.net/140222/watch-yekaterinburg-vs-metallurg-magnitogorsk</sportsdevilas>
+<referer>http://goatd.net/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>Icehockey - 17:00 Bars Kazan vs Salavat Ufa</title>
+<sportsdevilas>http://goatd.net/140223/watch-bars-kazan-vs-salavat-ufa</sportsdevilas>
+<referer>http://goatd.net/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
 
 <item>
 <title>Football - 18:30 2.Bundesliga : RB Leipzig - Heidenheim</title>
@@ -188,6 +205,15 @@
 </item>
 
 <item>
+<title>Darts - 19:00 Live Premier League Darts *Sometimes stream needs more then 1 click*</title>
+<sportsdevilas>http://mamahd.com/watch-sky-sports-2-live-streaming-free-1.html</sportsdevilas>
+<referer>http://mamahd.com/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
+
+
+<item>
 <title>Football - 20:00 French Cup : Lorient - GFC Ajaccio</title>
 <linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
 <regex>
@@ -265,6 +291,23 @@
 <referer>http://www.streamsarena.eu/</referer>
 </regex>
 <thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+</item>
+
+
+<item>
+<title>Football - 21:00 Granville vs Marseille Link 1</title>
+<sportsdevilas>http://goatd.net/140199/watch-granville-vs-marseille</sportsdevilas>
+<referer>http://goatd.net/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>Football - 2100: Granville vs Marseille Link 2</title>
+<sportsdevilas>http://goatd.net/140200/watch-granville-vs-marseille</sportsdevilas>
+<referer>http://goatd.net/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
@@ -546,6 +589,32 @@
 </regex>
 <thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
 </item>
+
+<item>
+<title>Baseball - 21:05 Chicago White Sox vs Los Angeles Dodgers</title>
+<sportsdevilas>http://goatd.net/91409/watch-chicago-white-sox-vs-los-angeles-dodgers</sportsdevilas>
+<referer>http://goatd.net/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>Baseball - 21:05 Cincinnati Reds vs Cleveland Indians</title>
+<sportsdevilas>http://goatd.net/108911/watch-cincinnati-reds-vs-cleveland-indians</sportsdevilas>
+<referer>http://goatd.net/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>Baseball - 21:05 Oakland Athletics vs Los Angeles Angels</title>
+<sportsdevilas>Oakland Athletics vs Los Angeles Angels</sportsdevilas>
+<referer>http://goatd.net/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
+
+
 
 <item>
 <title>Football - 21:45 Coppa Italia : Inter Milan - Juventus</title>
@@ -870,13 +939,10 @@
 
 
 
-item>
-<title>F</title>
-<sportsdevilas>http://goatd.net/140026/watch-gamba-osaka-vs-melbourne-victory</sportsdevilas>
-<referer>http://goatd.net/</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
+
+
+
+
 
 
 <items>
