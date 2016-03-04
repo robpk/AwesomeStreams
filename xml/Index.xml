@@ -9,13 +9,29 @@
 </channel>
 
 <channel>
-<name>Live Sport</name>
+<name>[COLOR orange][B]Live Sport[/B][/COLOR</name>
 <thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
 <fanart>https://www.mupload.nl/img/imebx5tyjhd.jpg</fanart>
 <link></link>
 <externallink>http://bit.ly/1WTOy4w</externallink>
 </channel>
 
+<channel>
+<name>[COLOR orange][B]Sport Channels[/B][/COLOR</name>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart>https://www.mupload.nl/img/imebx5tyjhd.jpg</fanart>
+<link></link>
+<externallink>http://bit.ly/1LY641L</externallink>
+</channel>
+
+
+<item>
+<title>[COLOR orange][B]Stream Sites[/B][/COLOR]</title>
+<linkas>http://ignoreme</linkas>
+<externallink>http://bit.ly/21Mjp6x</externallink>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
 
 <channel>
 <name>[COLOR orange][B]**********Additional Categories**********[/B][/COLOR]</name>
