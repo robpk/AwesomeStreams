@@ -7,6 +7,8 @@
 <fanart></fanart>
 </item>
 
+
+
 <item>
 <title>[COLOR orange][B]For helping me with the code[/B][/COLOR]</title>
 <linkas>http://ignoreme</linkas>
@@ -15,13 +17,23 @@
 <fanart></fanart>
 </item>
 
+
 <item>
-<title>[COLOR orange][B]---------- Extra Streams ----------[/B][/COLOR]</title>
+<title>[COLOR orange][B]---------- Sky Sports collection----------[/B][/COLOR]</title>
+<linkas>http://ignoreme</linkas>
+<externallink>http://bit.ly/1QQLfGH</externallink>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>[COLOR orange][B]---------- Stream Sites ----------[/B][/COLOR]</title>
 <linkas>http://ignoreme</linkas>
 <externallink>http://</externallink>
 <thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
 <fanart></fanart>
 </item>
+
 
 <item>
 <title>ARENA STREAMS</title>
