@@ -128,66 +128,7 @@
 <fanart></fanart>
 </item>
 
-<item>
-<title>Dutch Football - 20:00 Den Haag vs FC Twente Link 2</title>
-<sportsdevilas>http://firstrowne.eu/watch/415877/1/watch-ado-den-haag-vs-fc-twente.html</sportsdevilas>
-<referer>http://firstrowne.eu</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
 
-<item>
-<title>Dutch Football - 20:00 Den Haag vs FC Twente Link 2</title>
-<sportsdevilas>http://firstrowne.eu/watch/415877/1/watch-ado-den-haag-vs-fc-twente.html</sportsdevilas>
-<referer>http://firstrowne.eu</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
-
-
-<item>
-<title>Dutch Football - 20:00 Den Haag vs FC Twente Link 3</title>
-<sportsdevilas>http://firstrowne.eu/watch/415877/2/watch-ado-den-haag-vs-fc-twente.html</sportsdevilas>
-<referer>http://firstrowne.eu</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
-
-
-<item>
-<title>Dutch Football - 20:00 Den Haag vs FC Twente Link 4</title>
-<sportsdevilas>http://firstrowne.eu/watch/415877/3/watch-ado-den-haag-vs-fc-twente.html</sportsdevilas>
-<referer>http://firstrowne.eu</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
-
-
-<item>
-<title>Dutch Football - 20:00 Den Haag vs FC Twente Link 5</title>
-<sportsdevilas>http://firstrowne.eu/watch/415877/4/watch-ado-den-haag-vs-fc-twente.html</sportsdevilas>
-<referer>http://firstrowne.eu</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
-
-
-<item>
-<title>Dutch Football - 20:00 Den Haag vs FC Twente Link 6</title>
-<sportsdevilas>http://firstrowne.eu/watch/415877/5/watch-ado-den-haag-vs-fc-twente.html</sportsdevilas>
-<referer>http://firstrowne.eu</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
-
-
-<item>
-<title>Dutch Football - 20:00 Den Haag vs FC Twente Link 7</title>
-<linkas>http://firstrowne.eu/watch/415877/6/watch-ado-den-haag-vs-fc-twente.html</linkas>
-<referer>http://firstrowne.eu</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
 
 <item>
 <title>Dutch Football - 20:00 NAC Breda vs Achilles 29</title>
@@ -197,100 +138,11 @@
 <fanart></fanart>
 </item>
 
-<item>
-<title>Darts - 20:00 Darts - PDC UK Open</title>
-<sportsdevilas>http://www.batmanstream.com/free-live-video-streaming-darts-pdc-uk-open-other-darts-358118.html</sportsdevilas>
-<referer>http://live.batmanstream.com/</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
 
 
 
 <item>
-<title>Football - 20:00 French Cup : Lorient - GFC Ajaccio</title>
-<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
-<regex>
-<name>URLEncodedLink</name>
-<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>token</name>
-<expres>"token":"(.*?)"</expres>
-<page>http://p2pcast.tech/getTok.php</page>
-<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
-<X-Req>XMLHttpRequest</X-Req>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar>$doregex[get-encodeUrl]</cookieJar>
-</regex>
-<regex>
-<name>decodedUrl</name>
-<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
-<page></page>
-</regex>
-<regex>
-<name>get-encodeUrl</name>
-<expres>murl = "(.*?)"</expres>
-<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
-<referer>http://www.streamsarena.eu/player-lsh/player9.html</referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>id</name>
-<expres>id='(.*?)'</expres>
-<page>http://www.streamsarena.eu/player-lsh/player9.html</page>
-<referer>http://www.streamsarena.eu/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-</item>
-
-
-<item>
-<title>Football - 20:00 French Cup : Sochaux - Nantes</title>
-<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
-<regex>
-<name>URLEncodedLink</name>
-<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>token</name>
-<expres>"token":"(.*?)"</expres>
-<page>http://p2pcast.tech/getTok.php</page>
-<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
-<X-Req>XMLHttpRequest</X-Req>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar>$doregex[get-encodeUrl]</cookieJar>
-</regex>
-<regex>
-<name>decodedUrl</name>
-<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
-<page></page>
-</regex>
-<regex>
-<name>get-encodeUrl</name>
-<expres>murl = "(.*?)"</expres>
-<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
-<referer>http://www.streamsarena.eu/player-lsh/player10.html</referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>id</name>
-<expres>id='(.*?)'</expres>
-<page>http://www.streamsarena.eu/player-lsh/player10.html</page>
-<referer>http://www.streamsarena.eu/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-</item>
-
-
-<item>
-<title>Dutch Football - 20:45 AS Roma vs Fiorentina</title>
+<title>Football - 20:45 AS Roma vs Fiorentina</title>
 <sportsdevilas>http://goatd.net/140325/watch-as-roma-vs-fiorentina</sportsdevilas>
 <referer>http://goatd.net/</referer>
 <thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
