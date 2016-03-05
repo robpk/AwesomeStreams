@@ -82,7 +82,7 @@
 <fanart></fanart>
 </item>
 
-item>
+<item>
 <title>Football - 13:30	Rangers vs Dundee FC</title>
 <sportsdevilas>http://goatd.net/140529/watch-rangers-vs-dundee-fc</sportsdevilas>
 <referer>http://goatd.net/</referer>
@@ -90,6 +90,30 @@ item>
 <fanart></fanart>
 </item>
 
+
+<item>
+<title>Darts - 13:30 UK Open Darts</title>
+<sportsdevilas>http://goatd.net/73171/watch-uk-open-darts</sportsdevilas>
+<referer>http://goatd.net/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>Football - 13:45 Tottenham vs Arsenal Link 1</title>
+<sportsdevilas>http://goatd.net/140446/watch-tottenham-vs-arsenal</sportsdevilas>
+<referer>http://goatd.net/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>Football - 13:45 Tottenham vs Arsenal Link 2</title>
+<sportsdevilas>http://goatd.net/140447/watch-tottenham-vs-arsenal</sportsdevilas>
+<referer>http://goatd.net/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
 
 
 </items>
