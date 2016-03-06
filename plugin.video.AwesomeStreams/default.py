@@ -16,6 +16,7 @@ import plugintools
 import urlparse
 import httplib
 import time
+import live365
 from addon.common.net import Net
 from BeautifulSoup import BeautifulStoneSoup, BeautifulSoup, BeautifulSOAP
 try:
@@ -25,7 +26,7 @@ except:
 import SimpleDownloader as downloader
 import time
 import requests
-from lib.utils import *
+
 
 
 net = Net(user_agent='Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.72 Safari/537.36')
@@ -42,6 +43,9 @@ class NoRedirection(urllib2.HTTPErrorProcessor):
    https_response = http_response
 
 ASBase = 'aHR0cHM6Ly9naXRodWIuY29tL0F3ZXNvbWVzdHJlYW1zL0F3ZXNvbWVTdHJlYW1zL3Jhdy9tYXN0ZXIveG1sL0luZGV4LnhtbA=='
+ASBase1 ='aHR0cHM6Ly9naXRodWIuY29tL0F3ZXNvbWVzdHJlYW1zL0F3ZXNvbWVTdHJlYW1zL3Jhdy9tYXN0ZXIveG1sL0luZGV4Mi54bWw='
+
+
 sourceSitebvls = 'http://bvls2016.sc'      
 
 addon = xbmcaddon.Addon('plugin.video.AwesomeStreams')
@@ -50,6 +54,9 @@ profile = xbmc.translatePath(addon.getAddonInfo('profile').decode('utf-8'))
 home = xbmc.translatePath(addon.getAddonInfo('path').decode('utf-8'))
 favorites = os.path.join(profile, 'favorites')
 history = os.path.join(profile, 'history')
+
+if not os.path.exists(profile):
+    os.makedirs(profile)
 
 REV = os.path.join(profile, 'list_revision')
 icon = os.path.join(home, 'icon.png')
@@ -73,6 +80,126 @@ BASE_URL = 'http://livestreams.omroep.nl/'
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10) AppleWebKit/600.1.25 (KHTML, like Gecko) Version/8.0 Safari/600.1.25'
 REF_URL = 'http://www.npo.nl'
 TOKEN_URL = 'http://ida.omroep.nl/npoplayer/i.js'
+
+S365COOKIEFILE='s365CookieFile.lwp'
+S365COOKIEFILE=os.path.join(profile, S365COOKIEFILE)
+
+def get365CookieJar(updatedUName=False):
+    cookieJar=None
+    try:
+        cookieJar = cookielib.LWPCookieJar()
+        if not updatedUName:
+            cookieJar.load(S365COOKIEFILE,ignore_discard=True)
+    except: 
+        cookieJar=None
+
+    if not cookieJar:
+        cookieJar = cookielib.LWPCookieJar()
+    return cookieJar
+
+def Colored(text = '', colorid = '', isBold = False):
+    if colorid == 'ZM':
+        color = 'FF11b500'
+    elif colorid == 'EB':
+        color = 'FFe37101'
+    elif colorid == 'bold':
+        return '[B]' + text + '[/B]'
+    else:
+        color = colorid
+         
+    if isBold == True:
+        text = '[B]' + text + '[/B]'
+    return '[COLOR ' + color + ']' + text + '[/COLOR]' 
+
+def AddSports365Channels(url=None):
+    errored=True
+    import live365
+    addDir(Colored("All times in local timezone.",'red') ,"" ,0 ,"","","","","","","",isItFolder=False)		#name,url,mode,icon
+    videos=live365.getLinks()
+    for nm,link,active in videos:
+        if active:
+           
+            addDir(Colored(nm  ,'ZM') ,link,48 ,"","","","","","","",isItFolder=False)
+        else:
+            addDir("[N/A]"+Colored(nm ,'blue') ,"",0 ,"","","","","","","",isItFolder=False)
+        errored=False
+    if errored:
+       if RefreshResources([('live365.py','https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/raw/master/plugin.video.AwesomeStreams/live365.py')]):
+            dialog = xbmcgui.Dialog()
+            ok = dialog.ok('XBMC', 'No Links, so updated files dyamically, try again, just in case!')           
+            print 'Updated files'
+
+
+def playSports365(url):
+    #print ('playSports365')
+    import live365
+    urlToPlay=live365.selectMatch(url)
+    if urlToPlay and len(urlToPlay)>0:
+        listitem = xbmcgui.ListItem( label = str(name), iconImage = "DefaultVideo.png", thumbnailImage = xbmc.getInfoImage( "ListItem.Thumb" ) )
+    #    print   "playing stream name: " + str(name) 
+        xbmc.Player(  ).play( urlToPlay, listitem)  
+    else:
+       if RefreshResources([('live365.py','https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/raw/master/plugin.video.AwesomeStreams/live365.py')]):
+            dialog = xbmcgui.Dialog()
+            ok = dialog.ok('XBMC', 'No Links, so updated files dyamically, try again, just in case!')           
+            print 'Updated files'
+    return	
+    
+def RefreshResources(resources):
+#	print Fromurl
+    pDialog = xbmcgui.DialogProgress()
+    ret = pDialog.create('XBMC', 'checking Updates...')
+    totalFile=len(resources)
+    fileno=0
+    import hashlib
+    updated=False
+    try:
+        for rfile in resources:
+            if pDialog.iscanceled(): return
+            progr = (fileno*80)/totalFile
+            fname = rfile[0]
+            fileToDownload = rfile[1]
+            fileHash=hashlib.md5(fileToDownload+addon_version).hexdigest()
+            lastFileTime=addon.getSetting( "Etagid"+fileHash)  
+            if lastFileTime=="": lastFileTime=None
+            resCode=200
+            #print fileToDownload
+            eTag=None        
+            try:
+                req = urllib2.Request(fileToDownload)
+                req.add_header('User-Agent','Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36')
+
+                if lastFileTime:
+                    req.add_header('If-None-Match',lastFileTime)
+                response = urllib2.urlopen(req)
+                resCode=response.getcode()
+                if resCode<>304:
+                    try:
+                        eTag=response.info().getheader('Etag')
+                    except: pass
+                    data=response.read()
+            except Exception as e: 
+                s = str(e)
+                if 'Not Modified'.lower() in s.lower(): resCode=304
+                data=''
+            if ('Exec format error: exec' in data or 'A file permissions error has occurred' in data) and 'xbmcplugin' not in data:
+                data=''
+
+            if len(data)>0:
+                with open(os.path.join(home, fname), "wb") as filewriter:
+                    filewriter.write(data)
+                    updated=True
+                    if eTag:
+                        addon.setSetting( id="Etagid"+fileHash ,value=eTag)    
+                pDialog.update(20+progr, 'imported ...'+fname)
+            elif resCode==304:
+                pDialog.update(20+progr, 'No Change.. skipping.'+fname)
+            else:            
+                pDialog.update(20+progr, 'Failed..zero byte.'+fname)
+            fileno+=1
+    except: pass
+    pDialog.close()
+    return updated
 
 
 def collect_token():
@@ -168,9 +295,12 @@ def findStream(page) :
 				
 def ASIndex():
     addon_log("ASIndex")
-    getData(base64.b64decode(ASBase),'')
+    getData(base64.b64decode(ASBase1),'')
     addDir('News','News',46,icon ,  FANART,'','','','')
     addDir('Privacy Policy','Privacy Policy',45,icon ,  FANART,'','','','')
+    getData(base64.b64decode(ASBase),'')
+    addDir('Sport365.live - from ZemTV','',47,icon ,  FANART,'','','','')
+  
     xbmcplugin.endOfDirectory(int(sys.argv[1]))
 
 def News():
@@ -870,6 +1000,7 @@ def getItems(items,fanart):
                                 #print 'referer found'
                                 sportsdevil = sportsdevil + '%26referer=' +referer
                             url.append(sportsdevil)
+														 
                 elif len(item('p2p')) >0:
                     for i in item('p2p'):
                         if not i.string == None:
@@ -2199,7 +2330,7 @@ def download_file(name, url):
             addSource(os.path.join(addon.getSetting('save_location'), name))
 
 
-def addDir(name,url,mode,iconimage,fanart,description,genre,date,credits,showcontext=False):
+def addDir(name,url,mode,iconimage,fanart,description,genre,date,credits,showcontext=False,isItFolder=True):
         
         u=sys.argv[0]+"?url="+urllib.quote_plus(url)+"&mode="+str(mode)+"&name="+urllib.quote_plus(name)+"&fanart="+urllib.quote_plus(fanart)
         ok=True
@@ -2226,7 +2357,7 @@ def addDir(name,url,mode,iconimage,fanart,description,genre,date,credits,showcon
                 contextMenu.append(('Add to AwesomeStreams Favorites','XBMC.RunPlugin(%s?mode=5&name=%s&url=%s&iconimage=%s&fanart=%s&fav_mode=%s)'
                          %(sys.argv[0], urllib.quote_plus(name), urllib.quote_plus(url), urllib.quote_plus(iconimage), urllib.quote_plus(fanart), mode)))
             liz.addContextMenuItems(contextMenu)
-        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
+        ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=isItFolder)
 
         return ok
 def ytdl_download(url,title,media_type='video'):
@@ -2767,8 +2898,17 @@ elif mode==45:
 
 elif mode==46:
     News()
-    	
+		
+elif mode==47 :
+    AddSports365Channels(url)
+    
+elif mode==48:
+    url=base64.b64decode(url)
+    xbmc.log(url)
+    playSports365(url.split('Sports365:')[1])
+    	  	
 elif mode==53:
     addon_log("Requesting JSON-RPC Items")
     pluginquerybyJSON(url)
-    xbmcplugin.endOfDirectory(int(sys.argv[1]))
+
+xbmcplugin.endOfDirectory(int(sys.argv[1]))
