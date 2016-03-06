@@ -156,22 +156,6 @@
 </regex>
 <thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
 </item>
-<item>
-<title>Dutch Football - 14:30 Nec vs Heracles Alemo [COLOR orange]HQ[/COLOR]</title>
-<linkas>http://tinyurl.com/zjxzuz6</linkas>
-<referer>http://goatd.net/</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
-
-
-<item>
-<title>Dutch Football - 14:30 Willem II vs Ajax [COLOR orange]HQ[/COLOR]</title>
-<linkas>http://tinyurl.com/zjxzuz6</linkas>
-<referer>http://goatd.net/</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
 
 
 <item>
@@ -254,21 +238,16 @@
 </regex>
 <thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
 </item>
+
 <item>
-<title>Dutch Football - 14:30 Nec vs Heracles Alemo [COLOR orange]HQ[/COLOR]</title>
-<linkas>http://tinyurl.com/zjxzuz6</linkas>
-<referer>http://goatd.net/</referer>
+<title>Dutch Football 16:56 - Feyenoord - SC Cambuur</title>
+<sportsdevilas>http://eredivisie-stream.net/live/feyenoord-live-stream/channel-1/</sportsdevilas>
+<referer>http://barcelonastream.com</referer>
 <thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
 <fanart></fanart>
 </item>
 
-<item>
-<title>Football - 16:45 Feyenoord vs Cambuur Leeuwarden [COLOR orange]HQ[/COLOR]</title>
-<linkas>http://tinyurl.com/zjxzuz6</linkas>
-<referer>http://goatd.net/</referer>
-<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-<fanart></fanart>
-</item>
+
 
 
 </items>
