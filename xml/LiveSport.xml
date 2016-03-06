@@ -248,13 +248,20 @@
 </item>
 
 <item>
-<title>Dutch Football 17:00 - West Bromwich Albion - Manchester United</title>
+<title>Football 17:00 - West Bromwich Albion - Manchester United</title>
 <sportsdevilas>http://premier-league-lives.net/live/manchester-united-live-stream/channel-1/</sportsdevilas>
 <referer>http://premier-league-lives.net</referer>
 <thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
 <fanart></fanart>
 </item>
 
+<item>
+<title>Football 17:30 - Hamburger - Hertha</title>
+<sportsdevilas>http://bundesliga-streams.net/live/borussia-dortmund-live-stream/channel-1/</sportsdevilas>
+<referer>http://bundesliga-streams.net/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
 
 
 
