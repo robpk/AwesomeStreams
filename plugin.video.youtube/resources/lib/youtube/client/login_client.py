@@ -2,10 +2,14 @@ __author__ = 'bromix'
 
 import time
 import urlparse
+import xbmc
 
 from resources.lib.kodion import simple_requests as requests
 from resources.lib.youtube.youtube_exceptions import LoginException
 
+# Kodi 17 support and API keys by Uukrul
+def log_error(text):
+    xbmc.log('YouTube login_client.py - %s' % (text),xbmc.LOGERROR)
 
 class LoginClient(object):
     CONFIGS = {
@@ -19,46 +23,52 @@ class LoginClient(object):
         'youtube-for-kodi-quota': {
             'token-allowed': False,
             'system': 'All',
-            'key': 'AIzaSyDJMok9h2gj-80HI1fo8FTwAEULJiJLge0',
-            'id': '417712220326-jc05u5q0ffiroqs6jsdvluq83l15vn2h.apps.googleusercontent.com',
-            'secret': 'biwx33-O6zyWYoSnZQC4gw4g'
+            'key': 'AIzaSyBLzlcN2eCzOhnl1WhyX0kYuyu-kwshDt8',
+            'id': '707691027705-s4mq8q747f8mrb0vjcn3jvp17af4819o.apps.googleusercontent.com',
+            'secret': 'r_95MHjK38AyCkoEQm8fzcCM'
         },
         'youtube-for-kodi-fallback': {
             'token-allowed': False,
             'system': 'Fallback!',
-            'key': 'AIzaSyByellzrURGG8Z9KnzdXwZAd7Kmk1jziLA',
-            'id': '417712220326-9fnk9igk0agqrbihjj82jv4la1b9bsbe.apps.googleusercontent.com',
-            'secret': 'o7PQtV1GjffqaXoBGsqhYAfd'
+            'key': 'AIzaSyAUjiaAUOcm6wmA8BHMloDby6U4RMtKLvs',
+            'id': '970514987436-b1rlhh1sf3fufqcvlm2a2taa2tq4t5uc.apps.googleusercontent.com',
+            'secret': 'zFaJYGEbvx329c8G_GPO5RJ3'
         },
         'youtube-for-kodi-12': {
             'system': 'Frodo',
-            'key': 'AIzaSyB6-pMlWO_XmgdM15VKGeLH4QsipdToBas',
-            'id': '131835494776-s0ef9jorci9vl0kaa5sqslupqvlku6ej.apps.googleusercontent.com',
-            'secret': 'Fz9nnfVGoH6jiLc0iefvzZYM'
+            'key': 'AIzaSyCDn_9EybTJiymHipNS3jk5ZpCTXdCotQ0',
+            'id': '947596709414-08nrn314d8j3k91cl4f51srcu6m19hvu.apps.googleusercontent.com',
+            'secret': 'HsLT2ZCexIV-VFxWeYVZ2TUc'
         },
         'youtube-for-kodi-13': {
             'system': 'Gotham',
-            'key': 'AIzaSyB6-pMlWO_XmgdM15VKGeLH4QsipdToBas',
-            'id': '131835494776-s0ef9jorci9vl0kaa5sqslupqvlku6ej.apps.googleusercontent.com',
-            'secret': 'Fz9nnfVGoH6jiLc0iefvzZYM'
+            'key': 'AIzaSyAmrf3BneEQPDiUEuQlzy0_rbFGDBg-bi0',
+            'id': '448940676713-min9u5frfujprbnb8f3dri3cv9jr32rn.apps.googleusercontent.com',
+            'secret': '79vMsJsNC9jypSfryUMu00jW'
         },
         'youtube-for-kodi-14': {
             'system': 'Helix',
-            'key': 'AIzaSyCOxb_JvsI1-ZneJ2SXTkwZvW3fdtaR3bg',
-            'id': '45906745725-ucn38a9eumqcgfkmv14th17s0eq8kt5f.apps.googleusercontent.com',
-            'secret': 'sK6GK-ZhzgXWehCdjaGybHRi'
+            'key': 'AIzaSyCCnZImC7gTniNfgwqGwixIdBVGxiCOKlU',
+            'id': '107500767506-9mvbaacuscf8cge2n3kkvj50a6dnrk8g.apps.googleusercontent.com',
+            'secret': '2ceVfognBCtn8uh20HmlJN4X'
         },
         'youtube-for-kodi-15': {
             'system': 'Isengard',
-            'key': 'AIzaSyCb87bJklCXXmhxfaToEtdjyuqlsff54dg',
-            'id': '1024430369369-holcfk6qdnaup7612a8kos7ladv5l986.apps.googleusercontent.com',
-            'secret': 'Y75MWnWBp5N7B3oozNzEiSAv'
+            'key': 'AIzaSyATqDim-56y8HcN1NAzQdVZgdMoc6d9Eys',
+            'id': '610696918705-bkt6v536k7gn2dtcv8vdngm4b0vt5sev.apps.googleusercontent.com',
+            'secret': 'kV7ReP1f_Lg9i2hWR2liHnO6'
         },
         'youtube-for-kodi-16': {
             'system': 'Jarvis',
-            'key': 'AIzaSyA6NbAYs_9s6FcdpX9qBT2R0r36upvj27o',
-            'id': '1024430369369-vfs1d0a18bv1241b4k84nb6k6hph04qd.apps.googleusercontent.com',
-            'secret': '8R7q4OBkkcKCEusZ9VGBp09s'
+            'key': 'AIzaSyBS3rNymJtzPYbJX5lSGdNCBS6ajh4VDDY',
+            'id': '879761788105-sduf0ht335dvg923ane7cg1jnt1d5l4k.apps.googleusercontent.com',
+            'secret': 'vBVDa-kNdCHDTkpD8b8HO718'
+        },
+        'youtube-for-kodi-17': {
+            'system': 'Krypton',
+            'key': 'AIzaSyBynxCrJOe3NWa4l2VezTHWVIQOrI9nPgY',
+            'id': '167759489832-579ic1cjlk5j6fg6bo6d7btvces6528p.apps.googleusercontent.com',
+            'secret': 'n93VQADkcc-HIqbx_kvnpAs4'
         }
     }
 
@@ -120,6 +130,7 @@ class LoginClient(object):
 
         result = requests.post(url, data=post_data, headers=headers, verify=False)
         if result.status_code != requests.codes.ok:
+            log_error('revoke')
             raise LoginException('Logout Failed')
 
         pass
@@ -160,6 +171,7 @@ class LoginClient(object):
 
         result = requests.post(url, data=post_data, headers=headers, verify=False)
         if result.status_code != requests.codes.ok:
+            log_error('refresh_token')
             raise LoginException('Login Failed')
 
         if result.headers.get('content-type', '').startswith('application/json'):
@@ -205,6 +217,7 @@ class LoginClient(object):
 
         result = requests.post(url, data=post_data, headers=headers, verify=False)
         if result.status_code != requests.codes.ok:
+            log_error('get_device_token')
             raise LoginException('Login Failed')
 
         if result.headers.get('content-type', '').startswith('application/json'):
@@ -240,6 +253,7 @@ class LoginClient(object):
 
         result = requests.post(url, data=post_data, headers=headers, verify=False)
         if result.status_code != requests.codes.ok:
+            log_error(result.text)
             raise LoginException('Login Failed')
 
         if result.headers.get('content-type', '').startswith('application/json'):
@@ -280,6 +294,7 @@ class LoginClient(object):
 
         result = requests.post(url, data=post_data, headers=headers, verify=False)
         if result.status_code != requests.codes.ok:
+            log_error('authenticate')
             raise LoginException('Login Failed')
 
         lines = result.text.replace('\n', '&')
