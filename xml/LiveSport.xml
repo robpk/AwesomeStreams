@@ -18,13 +18,20 @@
 </item>
 
 <item>
-<title>[COLOR orange][B]---------- Sunday 6 March 2016 All time is CET----------[/B][/COLOR]</title>
+<title>[COLOR orange][B]---------- Monday 7 March 2016 All time is CET----------[/B][/COLOR]</title>
 <linkas>http://ignoreme</linkas>
 <externallink>http://</externallink>
 <thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
 <fanart></fanart>
 </item>
 
+<item>
+<title>20:00 PSV Youth vs Fortuna Sittard Link 1</title>
+<sportsdevilas>http://idimsports.eu/watch/417196/1/watch-psv-youth-vs-fortuna-sittard.html</sportsdevilas>
+<referer>http://idimsports.eu/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
 
 <item>
 <title>[COLOR orange][B]---------- Streams online 5-15 minutes before startime----------[/B][/COLOR]</title>
@@ -34,456 +41,95 @@
 <fanart></fanart>
 </item>
 
-
-
-
 <item>
-<title>Football - 21:00 - MLS : Chicago Fire - New York City</title>
-<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
-<regex>
-<name>URLEncodedLink</name>
-<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>token</name>
-<expres>"token":"(.*?)"</expres>
-<page>http://p2pcast.tech/getTok.php</page>
-<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
-<X-Req>XMLHttpRequest</X-Req>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar>$doregex[get-encodeUrl]</cookieJar>
-</regex>
-<regex>
-<name>decodedUrl</name>
-<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
-<page></page>
-</regex>
-<regex>
-<name>get-encodeUrl</name>
-<expres>murl = "(.*?)"</expres>
-<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
-<referer>http://www.streamsarena.eu/player-lsh/player1.html</referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>id</name>
-<expres>id='(.*?)'</expres>
-<page>http://www.streamsarena.eu/player-lsh/player1.html</page>
-<referer>http://www.streamsarena.eu/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<title>Football - 13:00 Pribram vs C. Budejovice, Youth Link 1</title>
+<sportsdevilas>http://idimsports.eu/watch/417269/1/watch-pribram-vs-c.-budejovice,-youth.html</sportsdevilas>
+<referer>http://idimsports.eu/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
-<title>Football - La Liga : Valencia - Atletico Madrid</title>
-<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
-<regex>
-<name>URLEncodedLink</name>
-<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>token</name>
-<expres>"token":"(.*?)"</expres>
-<page>http://p2pcast.tech/getTok.php</page>
-<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
-<X-Req>XMLHttpRequest</X-Req>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar>$doregex[get-encodeUrl]</cookieJar>
-</regex>
-<regex>
-<name>decodedUrl</name>
-<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
-<page></page>
-</regex>
-<regex>
-<name>get-encodeUrl</name>
-<expres>murl = "(.*?)"</expres>
-<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
-<referer>http://www.streamsarena.eu/player-lsh/player1.html</referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>id</name>
-<expres>id='(.*?)'</expres>
-<page>http://www.streamsarena.eu/player-lsh/player1.html</page>
-<referer>http://www.streamsarena.eu/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<title>Football - 13:00 Pribram vs C. Budejovice, Youth Link 2</title>
+<sportsdevilas>http://idimsports.eu/watch/417269/2/watch-pribram-vs-c.-budejovice,-youth.html</sportsdevilas>
+<referer>http://idimsports.eu/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
-<title>Football - 21:00 La Liga : Valencia - Atletico Madrid</title>
-<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
-<regex>
-<name>URLEncodedLink</name>
-<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>token</name>
-<expres>"token":"(.*?)"</expres>
-<page>http://p2pcast.tech/getTok.php</page>
-<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
-<X-Req>XMLHttpRequest</X-Req>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar>$doregex[get-encodeUrl]</cookieJar>
-</regex>
-<regex>
-<name>decodedUrl</name>
-<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
-<page></page>
-</regex>
-<regex>
-<name>get-encodeUrl</name>
-<expres>murl = "(.*?)"</expres>
-<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
-<referer>http://www.streamsarena.eu/player-lsh/player4.html</referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>id</name>
-<expres>id='(.*?)'</expres>
-<page>http://www.streamsarena.eu/player-lsh/player4.html</page>
-<referer>http://www.streamsarena.eu/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<title>Football - 13:00 Banik Ostrava vs 1. FC Brno, Youth Link 1</title>
+<sportsdevilas>http://idimsports.eu/watch/417270/1/watch-banik-ostrava-vs-1.-fc-brno,-youth.html</sportsdevilas>
+<referer>http://idimsports.eu/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
-<title>Football - 21:00 La Liga : Valencia - Atletico Madrid </title>
-<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
-<regex>
-<name>URLEncodedLink</name>
-<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>token</name>
-<expres>"token":"(.*?)"</expres>
-<page>http://p2pcast.tech/getTok.php</page>
-<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
-<X-Req>XMLHttpRequest</X-Req>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar>$doregex[get-encodeUrl]</cookieJar>
-</regex>
-<regex>
-<name>decodedUrl</name>
-<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
-<page></page>
-</regex>
-<regex>
-<name>get-encodeUrl</name>
-<expres>murl = "(.*?)"</expres>
-<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
-<referer>http://www.streamsarena.eu/player-lsh/player4.html</referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>id</name>
-<expres>id='(.*?)'</expres>
-<page>http://www.streamsarena.eu/player-lsh/player4.html</page>
-<referer>http://www.streamsarena.eu/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<title>Football - 13:00 Banik Ostrava vs 1. FC Brno, Youth Link 2</title>
+<sportsdevilas>http://idimsports.eu/watch/417270/2/watch-banik-ostrava-vs-1.-fc-brno,-youth.html</sportsdevilas>
+<referer>http://idimsports.eu/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
-<title>Football - 22:00 Ligue 1 : Lyon - Guingamp</title>
-<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
-<regex>
-<name>URLEncodedLink</name>
-<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>token</name>
-<expres>"token":"(.*?)"</expres>
-<page>http://p2pcast.tech/getTok.php</page>
-<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
-<X-Req>XMLHttpRequest</X-Req>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar>$doregex[get-encodeUrl]</cookieJar>
-</regex>
-<regex>
-<name>decodedUrl</name>
-<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
-<page></page>
-</regex>
-<regex>
-<name>get-encodeUrl</name>
-<expres>murl = "(.*?)"</expres>
-<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
-<referer>http://www.streamsarena.eu/player-lsh/player5.html</referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>id</name>
-<expres>id='(.*?)'</expres>
-<page>http://www.streamsarena.eu/player-lsh/player5.html</page>
-<referer>http://www.streamsarena.eu/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<title>Football - 20:00 PSV Youth vs Fortuna Sittard Link 1</title>
+<sportsdevilas>http://idimsports.eu/watch/417196/1/watch-psv-youth-vs-fortuna-sittard.html</sportsdevilas>
+<referer>http://idimsports.eu/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
-<title>Nascar - 22:00 Nascar : Las Vegas Motor Speedway</title>
-<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
-<regex>
-<name>URLEncodedLink</name>
-<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>token</name>
-<expres>"token":"(.*?)"</expres>
-<page>http://p2pcast.tech/getTok.php</page>
-<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
-<X-Req>XMLHttpRequest</X-Req>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar>$doregex[get-encodeUrl]</cookieJar>
-</regex>
-<regex>
-<name>decodedUrl</name>
-<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
-<page></page>
-</regex>
-<regex>
-<name>get-encodeUrl</name>
-<expres>murl = "(.*?)"</expres>
-<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
-<referer>http://www.streamsarena.eu/player-lsh/player6.html</referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>id</name>
-<expres>id='(.*?)'</expres>
-<page>http://www.streamsarena.eu/player-lsh/player6.html</page>
-<referer>http://www.streamsarena.eu/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<title>Football - 20:00 PSV Youth vs Fortuna Sittard Link 2</title>
+<sportsdevilas>http://idimsports.eu/watch/417196/2/watch-psv-youth-vs-fortuna-sittard.html</sportsdevilas>
+<referer>http://idimsports.eu/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
+</item>
+
+<item>
+<title>Football - 20:00 PSV Youth vs Fortuna Sittard Link 3</title>
+<sportsdevilas>http://idimsports.eu/watch/417196/3/watch-psv-youth-vs-fortuna-sittard.html</sportsdevilas>
+<referer>http://idimsports.eu/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
 </item>
 
 
 <item>
-<title>Football - 22:30 Primeira Liga : Sporting Braga - FC Porto</title>
-<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
-<regex>
-<name>URLEncodedLink</name>
-<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>token</name>
-<expres>"token":"(.*?)"</expres>
-<page>http://p2pcast.tech/getTok.php</page>
-<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
-<X-Req>XMLHttpRequest</X-Req>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar>$doregex[get-encodeUrl]</cookieJar>
-</regex>
-<regex>
-<name>decodedUrl</name>
-<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
-<page></page>
-</regex>
-<regex>
-<name>get-encodeUrl</name>
-<expres>murl = "(.*?)"</expres>
-<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
-<referer>http://www.streamsarena.eu/player-lsh/player3.html</referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>id</name>
-<expres>id='(.*?)'</expres>
-<page>http://www.streamsarena.eu/player-lsh/player3.html</page>
-<referer>http://www.streamsarena.eu/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<title>Football - 20:00 PSV Youth vs Fortuna Sittard Link 3</title>
+<sportsdevilas>http://idimsports.eu/watch/417196/3/watch-psv-youth-vs-fortuna-sittard.html</sportsdevilas>
+<referer>http://idimsports.eu/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
 </item>
 
 
 <item>
-<title>NBA - 22:30 NBA : Oklahoma City Thunder @ Milwaukee Bucks</title>
-<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
-<regex>
-<name>URLEncodedLink</name>
-<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>token</name>
-<expres>"token":"(.*?)"</expres>
-<page>http://p2pcast.tech/getTok.php</page>
-<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
-<X-Req>XMLHttpRequest</X-Req>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar>$doregex[get-encodeUrl]</cookieJar>
-</regex>
-<regex>
-<name>decodedUrl</name>
-<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
-<page></page>
-</regex>
-<regex>
-<name>get-encodeUrl</name>
-<expres>murl = "(.*?)"</expres>
-<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
-<referer>http://www.streamsarena.eu/player-lsh/player7.html</referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>id</name>
-<expres>id='(.*?)'</expres>
-<page>http://www.streamsarena.eu/player-lsh/player7.html</page>
-<referer>http://www.streamsarena.eu/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<title>Football - 20:00 PSV Youth vs Fortuna Sittard Link 3</title>
+<sportsdevilas>http://idimsports.eu/watch/417196/3/watch-psv-youth-vs-fortuna-sittard.html</sportsdevilas>
+<referer>http://idimsports.eu/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
-<title>NBA - 22:30 NBA : Golden State Warriors @ Los Angeles Lakers</title>
-<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
-<regex>
-<name>URLEncodedLink</name>
-<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>token</name>
-<expres>"token":"(.*?)"</expres>
-<page>http://p2pcast.tech/getTok.php</page>
-<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
-<X-Req>XMLHttpRequest</X-Req>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar>$doregex[get-encodeUrl]</cookieJar>
-</regex>
-<regex>
-<name>decodedUrl</name>
-<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
-<page></page>
-</regex>
-<regex>
-<name>get-encodeUrl</name>
-<expres>murl = "(.*?)"</expres>
-<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
-<referer>http://www.streamsarena.eu/player-lsh/player8.html</referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>id</name>
-<expres>id='(.*?)'</expres>
-<page>http://www.streamsarena.eu/player-lsh/player8.html</page>
-<referer>http://www.streamsarena.eu/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
-</item>
-
-
-<item>
-<title>NBA - 23:00 NBA : Phoenix Suns @ Memphis Grizzlies</title>
-<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
-<regex>
-<name>URLEncodedLink</name>
-<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>token</name>
-<expres>"token":"(.*?)"</expres>
-<page>http://p2pcast.tech/getTok.php</page>
-<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
-<X-Req>XMLHttpRequest</X-Req>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar>$doregex[get-encodeUrl]</cookieJar>
-</regex>
-<regex>
-<name>decodedUrl</name>
-<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
-<page></page>
-</regex>
-<regex>
-<name>get-encodeUrl</name>
-<expres>murl = "(.*?)"</expres>
-<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
-<referer>http://www.streamsarena.eu/player-lsh/player9.html</referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>id</name>
-<expres>id='(.*?)'</expres>
-<page>http://www.streamsarena.eu/player-lsh/player9.html</page>
-<referer>http://www.streamsarena.eu/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<title>Football - 20:00 Middlesbrough vs Liverpool, U21</title>
+<sportsdevilas>http://idimsports.eu/watch/417197/1/watch-middlesbrough-vs-liverpool,-u21.html</sportsdevilas>
+<referer>http://idimsports.eu/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
 </item>
 
 <item>
-<title>Football - 23:30 MLS : Portland Timbers - Columbus Crew</title>
-<linkas>plugin://plugin.video.f4mTester/?streamtype=HLS&amp;url=$doregex[URLEncodedLink]</linkas>
-<regex>
-<name>URLEncodedLink</name>
-<expres>$pyFunction:urllib.quote_plus('$doregex[decodedUrl]$doregex[token]|Referer=http://cdn.webplayer.pw/jwplayer.flash.swf&amp;User-Agent=Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2')<expres>                                          
-<page></page>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>token</name>
-<expres>"token":"(.*?)"</expres>
-<page>http://p2pcast.tech/getTok.php</page>
-<referer>http://p2pcast.tech/stream.php?id=$doregex[id]&osr=0&p2p=0&stretching=fill</referer>
-<X-Req>XMLHttpRequest</X-Req>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar>$doregex[get-encodeUrl]</cookieJar>
-</regex>
-<regex>
-<name>decodedUrl</name>
-<expres>$pyFunction:base64.b64decode("$doregex[get-encodeUrl]")</expres>
-<page></page>
-</regex>
-<regex>
-<name>get-encodeUrl</name>
-<expres>murl = "(.*?)"</expres>
-<page>http://p2pcast.tech/stream.php?id=$doregex[id]</page>
-<referer>http://www.streamsarena.eu/player-lsh/player1.html</referer>
-<agent>Mozilla/5.0 (X11 Linux i686 rv:41.0) Gecko/20100101 Firefox/41.0 Iceweasel/41.0.2</agent>
-<cookieJar></cookieJar>
-</regex>
-<regex>
-<name>id</name>
-<expres>id='(.*?)'</expres>
-<page>http://www.streamsarena.eu/player-lsh/player1.html</page>
-<referer>http://www.streamsarena.eu/</referer>
-</regex>
-<thumbnail>https://raw.githubusercontent.com/AwesomeStreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<title>Football - 20:00 Reading vs Chelsea, U21</title>
+<sportsdevilas>http://idimsports.eu/watch/417238/1/watch-reading-vs--chelsea,-u21-.html</sportsdevilas>
+<referer>http://idimsports.eu/</referer>
+<thumbnail>https://raw.githubusercontent.com/Awesomestreams/AwesomeStreams/master/repository.awesome/icon.png</thumbnail>
+<fanart></fanart>
 </item>
-
-
-
-
-
 
 
 
